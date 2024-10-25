@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker Image
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin && make release DOCKER_IMAGE=ilgrosso/spid-saml-check
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin && make release DOCKER_IMAGE=tirasa/spid-saml-check
